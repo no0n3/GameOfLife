@@ -22,7 +22,7 @@ Run backend
 
 ```
 cd backend_node
-npm serve
+npm run serve
 ```
 
 Run frontend
@@ -30,6 +30,6 @@ Run frontend
 
 ```
 cd frontend
-npm serve
+npm run serve
 ```
 
