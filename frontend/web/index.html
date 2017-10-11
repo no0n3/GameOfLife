@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="/css/all.css" rel="stylesheet" type="text/css">
+</head>
+<body data-ng-app="app" ng-controller="MainController">
+<div class="game-app">
+    <div data-ng-show="loading">
+        loading...
+    </div>
+    <div class="game-main-cont" data-ng-show="!loading">
+        <div class="buttons-cont-top">
+            <div class="buttons-cont">
+                <button class="btn btn-success" data-ng-if="GAME_STATES.INIT === state" data-ng-click="startGame()">start</button>
+                <button class="btn btn-danger" data-ng-if="GAME_STATES.INIT !== state"data-ng-click="restartGame()">restart</button>
+                <button class="btn btn-success" data-ng-if="GAME_STATES.PAUSED === state" data-ng-click="toggleState()">play</button>
+                <button class="btn btn-warning" data-ng-if="GAME_STATES.PLAYING === state" data-ng-click="toggleState()">pause</button>
+                <button class="btn btn-default" data-ng-if="GAME_STATES.INIT !== state && GAME_STATES.OVER !== state" data-ng-click="zoomIn($event)">zoom in</button>
+                <button class="btn btn-default" data-ng-if="GAME_STATES.INIT !== state && GAME_STATES.OVER !== state" data-ng-click="zoomOut($event)">zoom out</button>
+                <span data-ng-if="GAME_STATES.INIT !== state">Generations: {{ generation }}</span>
+            </div>
+        </div>
+        <div class="game-canvas-cont" hm-pinch="pinch($event)">
+            <canvas id="game-canvas" width="550" height="550"></canvas>
+        </div>
+        <div data-ng-if="GAME_STATES.INIT === state" class="alert alert-info game-info">
+            Click and drag the mouse to select the initial state.
+        </div>
+        <div data-ng-if="GAME_STATES.OVER === state" class="alert alert-warning game-info">
+            <strong>Game Over!</strong> Generation {{generation}} reached.
+        </div>
+    </div>
+</div>
+
+<script src="/js/all.js"></script>
+</body>
+</html>

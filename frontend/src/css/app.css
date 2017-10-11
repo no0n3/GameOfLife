@@ -1,0 +1,53 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    overflow-y: scroll;
+}
+
+.game-app {
+    width: 550px;
+    height: 100%;
+    margin: auto;
+}
+
+button.btn {
+    margin-bottom: 5px;
+}
+
+.game-main-cont {
+    margin-top: 10px;
+}
+
+.game-canvas-cont #game-canvas {
+    border: 3px solid #e0dede;
+    background-color: #a8a6a6;
+}
+
+.game-main-cont .buttons-cont {
+    padding: 0px 10px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    margin-right: -150px;
+    width: 150px;
+}
+
+.game-main-cont .buttons-cont > span,
+.game-main-cont .buttons-cont > button {
+    display: block;
+}
+
+.game-main-cont .game-canvas-cont {
+    width: 550px;
+    height: 550px;
+    margin: auto;
+    background-color: #fff;
+}
+
+.game-main-cont .game-info {
+    margin-top: 5px;
+}
+
+.game-main-cont .buttons-cont-top {
+    position: relative;
+}

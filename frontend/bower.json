@@ -1,0 +1,19 @@
+{
+  "name": "game_of_life",
+  "authors": [
+    "Velizar Ivanov <v.ivanov@mdg.bg>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "angular": "^1.5.5",
+    "angular-route": "^1.6.2",
+    "angular-bootstrap": "^1.3.2",
+    "components-font-awesome": "^4.7.0",
+    "angular-gestures": "^0.3.1"
+  }
+}
