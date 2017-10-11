@@ -1,3 +1,7 @@
+# Conway's Game of Life application with AngulerJS and Node.js
+
+![Screenshot](images/demo_1.png)
+
 Set up backend
 -------------
 
