@@ -2,6 +2,14 @@
 
 ![Screenshot](images/demo_1.png)
 
+Project structure
+-------------
+
+```
+backend_node      - backend code location
+frontend          - fronted code location
+```
+
 Set up backend
 -------------
 
