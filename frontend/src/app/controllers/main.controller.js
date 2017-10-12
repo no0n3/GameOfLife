@@ -180,6 +180,7 @@
                     c = e.center;
                 }
                 if (4 === e.eventType && MAX_ZOOMS > zooms) {
+                    // pinch releace on less than the specified zoom max limit
                     zoomInHandler(e, c);
                 }
             }
