@@ -22,7 +22,7 @@ Run backend
 
 ```
 cd backend_node
-npm run serve
+npm run serve // starts the express rest api on http://localhost:3000/
 ```
 
 Run frontend
@@ -30,6 +30,6 @@ Run frontend
 
 ```
 cd frontend
-npm run serve
+npm run serve // starts the angular app on http://localhost:4321/
 ```
 
