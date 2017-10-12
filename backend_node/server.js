@@ -21,5 +21,5 @@ app.get('/api/check-status', apiController.checkStatus);
 app.post('/api/reset', apiController.reset);
 
 app.listen(3000, () => {
-    console.log('Example app listening on port 3000!')
+    console.log('REST API now listens on port 3000.')
 })
